@@ -1,0 +1,308 @@
+
+.lds-facebook {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left:47.5%;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #fff;
+  animation: lds-facebook 2s cubic-bezier(0, 0.5, 0.5, 1) 2;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+
+
+:root {
+    --Xangle: 0deg;
+    --Yangle: 0deg;
+    --Zangle: 0deg;
+}
+
+body{
+  background-color:black;
+}
+
+
+
+/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */ #tridiv {
+  perspective: 800px;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 100%;
+}
+.face {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1);
+}
+.scene, .shape, .face, .face-wrapper, .cr {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.scene {
+  width: 80em;
+  height: 80em;
+  top: 50%;
+  left: 50%;
+  margin: -40em 0 0 -40em;
+}
+.shape {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: 50%;
+}
+.face, .face-wrapper {
+  overflow: hidden;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+  /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+  background-size: 100% 100%!important;
+  background-position: center;
+}
+.face-wrapper .face {
+  left: 100%;
+  width: 100%;
+  height: 100%
+}
+.photon-shader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+.side {
+  left: 50%;
+}
+.cr, .cr .side {
+  height: 100%;
+}
+[class*="cuboid"] .ft, [class*="cuboid"] .bk {
+  width: 100%;
+  height: 100%;
+}
+[class*="cuboid"] .bk {
+  left: 100%;
+}
+[class*="cuboid"] .rt {
+  transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+  transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+  transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+  left: 100%;
+}
+[class*="cuboid"] .bm {
+  top: 100%;
+}
+/* .cub-1 styles */
+.cub-1 {
+  transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:10em;
+  height:10em;
+  margin:-5em 0 0 -5em;
+}
+.cub-1 .ft {
+  transform:translateZ(5em);
+
+}
+.cub-1 .bk {
+  transform:translateZ(-5em) rotateY(180deg);
+}
+.cub-1 .rt, .cub-1 .lt {
+  width:10em;
+  height:10em;
+}
+.cub-1 .tp, .cub-1 .bm {
+  width:10em;
+  height:10em;
+}
+
+@keyframes shadow-effect{
+  0%{
+    box-shadow: 0px 0px 8px 0px rgb(255, 238, 0);
+  }
+  25%{
+    box-shadow: 0px 0px 20px 0px rgb(255, 238, 0);
+  }
+  50%{
+    box-shadow: 0px 0px 18px 0px rgb(255, 238, 0);
+  }
+  75%{
+    box-shadow: 0px 0px 27px 0px rgb(255, 238, 0);
+  }
+  100%{
+    box-shadow: 0px 0px 7px 0px rgb(255, 238, 0);
+  }
+}
+.cub-1 .face:hover{
+  animation : shadow-effect 5s;
+}
+.cub-1 .face {
+  background-color:#0080c0;
+  display:grid;
+  grid-template-areas:". . ."
+                      ". a ."
+                      ". . .";
+
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  text-align: center;
+  font-family: cursive;
+  border: solid 3px rgb(22, 136, 151);
+  box-shadow: 0px 0px 8px 0px rgb(0, 225, 255);
+  font-weight: bold;
+  
+}
+h2{
+  transition:1s;
+} 
+h2:hover{
+  text-decoration: underline;
+  color:orangered;
+}
+a{
+  grid-area:a;
+  color:rgb(74, 94, 84);
+  
+}
+ 
+  
+
+.cub-1 .ft {
+  background-color:#0080c0;
+  display:flex;
+  justify-content: center;
+  
+  
+}
+.cub-1 .bk {
+  background-color:#0080c0;
+}
+.cub-1 .tp {
+  background-color:#0080c0;
+  display:grid;
+}
+.cub-1 .bm {
+  background-color:#0080c0;
+  display:grid;
+}
+.cub-1 .lt {
+  background-color:#0080c0;
+  display:grid;
+}
+.cub-1 .rt {
+  background-color:#0080c0;
+  display:grid;
+}
+/* .cub-2 styles */
+.cub-2 {
+  transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  opacity:1;
+  width:14em;
+  height:14em;
+  margin:-7em 0 0 -7em;
+  pointer-events: none;
+}
+.cub-2 .ft {
+  transform:translateZ(7em);
+  pointer-events: none;
+}
+.cub-2 .bk {
+  transform:translateZ(7em) rotateY(180deg);
+}
+.cub-2 .rt, .cub-2 .lt {
+  width:14em;
+  height:14em;
+}
+.cub-2 .tp, .cub-2 .bm {
+  width:14em;
+  height:14em;
+}
+.cub-2 .face {
+  background-color:#2f818100;
+  border : solid 3px rgb(76, 155, 187);
+  box-shadow: 0px 0px 20px 0px turquoise;
+
+}
+.cub-2 .ft {
+  background-color:#e5f8f800;
+  border : solid 3px rgb(76, 155, 187);
+}
+.cub-2 .bk {
+  background-color:#e5f8f800;
+  border : solid 3px rgb(76, 155, 187);
+}
+.cub-2 .tp {
+  background-color:#e5f8f800;
+  border : solid 3px rgb(76, 155, 187);
+}
+.cub-2 .bm {
+  background-color:#e5f8f800;
+  border : solid 3px rgb(76, 155, 187);
+}
+.cub-2 .lt {
+  background-color:#e5f8f800;
+  border : solid 3px rgb(76, 155, 187);
+}
+.cub-2 .rt {
+  background-color:#e5f8f800;
+  border : solid 3px rgb(76, 155, 187);
+}
+#logo{
+  border : none;
+}
+#rt1{
+  transition:0.5s;
+}
+#rt1:hover{
+  background-color:rgb(199, 80, 33);
+  border:solid 3px red;
+}
+#nets{
+  position:absolute;
+  z-index:10;
+  width:50%;
+  height: 400px;
+  background-color:black;
+}

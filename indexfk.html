@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cssfk\style.css">
+</head>
+<body>
+    <div class=container-fluid>
+        <div class=row>
+            <div id=col1 class="col-md-4 col-sm-6 col-12">
+                <br><h2 class=heading>Thanks!</h2><text class=text>for your trip in the<br> Prism ! </text> <br><br><a href="index.html"><button type="button" class="btn btn-outline-success">Back to the cube -></button></a>
+            </div>
+            <div id=col2 class="col-md-4 col-sm-6 col-12">
+                <br><h2 class=heading>Consider</h2><text class=text>leaving your impression<br> down there. </text> <br><br><a href="indexfk.html"><button type="button" class="btn btn-outline-info"></a>Feedback</button>
+            </div>
+            <div id=col3 class="col-md-4 col-sm-12 col-12">
+                <br><h2 class=heading>Subscribe</h2><text class=text>To recieve Newletters<br> and much more. </text> <br><br><button type="button" class="btn btn-outline-danger">Subscribe Now!</button>
+            </div>
+        </div>
+
+        <div id=row3 class=row>
+            <div id=fbcontainer>
+                <form id=form class="container-fluid">
+                    <div id=st class=col-md-12>
+                        <label id=labelname for=username>Username : </label>
+                        <input id=username name=username type=text>
+                        <small id="usernamehelp" class="form-text">No name ideas ?<br> use a username generator ! --> <a href="https://jimpix.co.uk/words/username-generator.asp"><button id=btn type="button" class="btn btn-outline-dark">Jimpix !</button></a></small></div>
+                    <div id=nd class=col-md-12>
+                        <label id=labelmail for=email>Email : </label>
+                        <input id=email name=email type=email><br></div>
+                    <div id=rd class=col-md-12>
+                        <label id=labelage for=age>Age : </label>
+                        <input id=age name=age type=number></div>
+                    <input class="col-md-6 col-11" id=fdbk name=fdbk type=text>
+                    <br><input type=submit name=subscribe id=subs value="Subscribe !" >
+
+
+                </form>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+<script src="jsfk\main.js"> </script>
+</html>

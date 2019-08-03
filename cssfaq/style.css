@@ -1,0 +1,152 @@
+
+
+
+
+
+#upmenu{
+    height: 20px;
+    width:100%;
+    background-color:rgb(26, 126, 64);
+    display:flex;
+    justify-content:space-around;
+    position:fixed;
+    z-index: 2;
+}
+#rect{
+    width:100%;
+    height: 70px;
+    background-color:rgb(32, 123, 139);
+    box-shadow: 1px 5px 10px 1px rgb(17, 17, 78);
+    position:fixed;
+    z-index: inherit;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+body{
+    background-color:rgb(245, 245, 245);
+}
+
+.cols{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rows{
+    margin-top:30px;
+    height: 500px;
+    width:100%;
+}
+.faq{
+    background-color:rgb(247, 244, 244);
+    height: 450px;
+    width:90%;
+    box-shadow :1px 1px 5px 1px rgb(95, 93, 93);
+    position:relative;
+    margin-bottom:50px;
+    transition:0.5s;
+}
+h3{
+    font-family: cursive;
+}
+.req{
+    background-color:rgba(44, 202, 44, 0.74);
+    width:70%;
+    height: 130px;
+    border-radius: 5%;
+    border: solid 1px green;
+    position:absolute;
+    left:10px;
+    top:70px;
+    font-family: verdana;
+    font-weight: bold; 
+    text-align:center;
+    align-content:center;
+    line-height: 30px;
+    
+}
+.ans{
+    background-color:rgba(24, 95, 161, 0.74);
+    width:70%;
+    height: 200px;
+    border-radius: 5%;
+    border: solid 1px rgb(13, 75, 70);
+    position:absolute;
+    left:25%;
+    top:230px;
+    font-family: verdana;
+    font-weight: bold; 
+    text-align:center;
+    align-content:center;
+    line-height: 30px;
+}
+.btn{
+    height: 50px;
+    background-color:rgba(255, 166, 0, 0.212);
+}
+#questions{
+    height: fit-content;   
+
+}
+text{
+    color:rgb(53, 50, 50);
+}
+.faq:hover{
+    box-shadow :5px 3px 10px 2px rgb(95, 93, 93);
+}
+.cols1{
+    height: 150px;
+    width:100%;
+
+}
+.btn4{
+    background-color:rgba(33, 102, 95, 0.432);
+}
+.btn3{
+    background-color:rgba(106, 116, 115, 0.432);
+}
+@media (max-width:768px){
+    .ans{
+       width:100%;
+       left:0;
+    }
+    .req{
+        width:100%;
+        left:0;
+    }
+    
+    
+}
+@media (max-width:414px){
+    .req{
+        background-color:rgba(44, 202, 44, 0.74);
+        width:70%;
+        height: 130px;
+        border-radius: 5%;
+        border: solid 1px green;
+        position:absolute;
+        left:10px;
+        top:70px;
+        font-family: verdana;
+        font-weight: bold; 
+        text-align:center;
+        align-content:center;
+        line-height: 30px;
+    }
+    .ans{
+        background-color:rgba(24, 95, 161, 0.74);
+        width:70%;
+        height: 210px;
+        border-radius: 5%;
+        border: solid 1px rgb(13, 75, 70);
+        position:absolute;
+        left:25%;
+        top:230px;
+        font-family: verdana;
+        font-weight: bold; 
+        text-align:center;
+        align-content:center;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,251 @@
+
+
+    body{
+        line-height: 50px;
+    }
+    #col1{
+        height: 400px;
+        width:100px;
+        background-color:rgb(243, 219, 7);
+        text-align: left;
+    }
+    #col2{
+        height: 400px;
+        width:100px;
+        background-color:rgb(148, 240, 72);
+        
+    }
+    #col3{
+        height: 400px;
+        width:100px;
+        background-color:rgb(72, 216, 149);
+    }
+    .heading{
+        font-family: cursive;
+        color:white;
+        font-size:40px;
+    }
+    .text{
+        font-family: verdana;
+        color:rgb(92, 91, 91);
+        font-weight: bold;
+        font-size:27px;
+    }
+    .btn{
+        font-weight: bold;
+        width:180px;
+        height: 50px;
+        
+    }
+@media (max-width : 842px){
+    #col1{
+        height: 500px;
+        width:100px;
+        background-color:rgb(219, 201, 32);
+        text-align: left;
+    }
+    #col2{
+        height: 500px;
+        width:100px;
+        background-color:rgb(148, 240, 72);
+        
+    }
+    #col3{
+        height: 500px;
+        width:100px;
+        background-color:rgb(72, 216, 149);
+    }
+}
+
+#row2{
+    background-color:rgb(238, 234, 234);
+    height: 200px;
+}
+#row3{
+    height: 450px;
+}
+#fbcontainer{
+    background-color:rgb(221, 171, 64);
+    height: 500px;
+    position:relative;
+    width:100%;
+
+
+}
+
+#labelname{
+    color:rgb(65, 62, 59);
+    font-weight: bold;
+    font-size:20px;
+    margin-top:10px;
+}
+#usernamehelp{
+    color:rgb(54, 52, 52);
+    font-weight: bold;
+    line-height: 5px;
+    
+}
+#btn{
+    margin-left:10px;
+    height: 35px;
+    width:75px;
+}
+#username{
+    height: 40px;
+    background-color:rgb(212, 192, 192);
+    border:solid 1px rgb(175, 170, 170);
+    border-radius:2px;
+}
+#email{
+    height: 40px;
+    background-color:rgb(212, 192, 192);
+    border:solid 1px rgb(175, 170, 170);
+    border-radius:2px;
+    margin-left:40px;
+}
+#labelmail{
+    color:rgb(65, 62, 59);
+    font-weight: bold;
+    font-size:20px;
+}
+#labelage{
+    color:rgb(65, 62, 59);
+    font-weight: bold;
+    font-size:20px;
+}
+#age{
+    height: 40px;
+    background-color:rgb(212, 192, 192);
+    border:solid 1px rgb(175, 170, 170);
+    border-radius:2px;
+    margin-left:54px;
+}
+#fdbk{
+    height: 420px;
+    margin-right:auto;
+    margin-left:auto;
+    position:absolute;
+    right:4%;
+    top:2%;
+    background-color:rgb(224, 219, 219);
+    border-radius: 1%;
+    box-shadow:0px 0px 10px 0px gray;
+    border:solid 3px black,;
+    width:900px;
+
+
+}
+#subtn{
+
+    left:100px;
+    top:300px;
+}
+@media (max-width : 512px){
+    #col1{
+        height: 500px;
+        width:100px;
+        background-color:rgb(255, 230, 6);
+        text-align: left;
+    }
+    #col2{
+        height: 500px;
+        width:100px;
+        background-color:rgb(148, 240, 72);
+        
+    }
+    #col3{
+        height: 500px;
+        width:100px;
+        background-color:rgb(72, 216, 149);
+
+    }
+    #fdbk{
+        height: 100px;
+        top:75%;
+        left:5%;
+    }
+}
+@media (max-width : 320px){
+    #fbcontainer{
+        height: 500px;
+
+    }
+    #username{
+        width:150px;
+    }
+    #email{
+        width:150px;
+    }
+    #age{
+        width:150px;
+    }
+    #usernamehelp{
+        line-height: 10px;
+    }
+    #btn{
+        width:100px;
+    }
+}
+@media (max-width : 767px){
+    #fbcontainer{
+        height: 700px;
+
+    }
+    #username{
+        width:150px;
+    }
+    #email{
+        width:150px;
+    }
+    #age{
+        width:150px;
+    }
+    #usernamehelp{
+        line-height: 10px;
+    }
+    #btn{
+        width:100px;
+    }
+    #fdbk{
+        width:250px;
+
+
+    }
+}
+@media (max-width : 1024px){
+    #fbcontainer{
+        height: 500px;
+
+    }
+    #username{
+        width:150px;
+    }
+    #email{
+        width:150px;
+    }
+    #age{
+        width:150px;
+    }
+    #usernamehelp{
+        line-height: 10px;
+    }
+    #btn{
+        width:100px;
+    }
+    #fdbk{
+        width:600px;
+    }
+    
+}
+#subs{
+    background-color:rgb(93, 184, 184);
+    width:150px;
+    border:solid 1px rgb(121, 121, 173);
+    font-family: verdana;
+    font-weight: bold;
+    transition:0.5s;
+    color:white;
+}
+#subs:hover{
+    background-color:rgb(105, 143, 143);
+}
